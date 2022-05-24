@@ -1,0 +1,139 @@
+['start', 'declaration_parameter_assign', 'declaration_parameter_suffix', 'M_declaration_parameter', 'M_declaration_parameter_suffix', 'expression_list', 'expression_list_suffix', 'M_function_definition', 'function_parameter_list', 'function_parameter_list_suffix', 'statement_list', 'assignment_expression_list', 'assignment_expression_list_suffix', 'M_selection_statement', 'N_selection_statement', 'N_iteration_statement', 'sstart']
+function_parameter_list
+float int void  $ 
+
+jump_statement
+return  
+
+or_operator
+||  
+
+M_declaration_parameter
+  $ 
+
+function_parameter
+float int void  
+
+single_bool_expression
+( ! number identifier  
+
+assignment_expression
+identifier  
+
+iteration_statement
+while  
+
+or_bool_expression
+( ! number identifier  
+
+declaration_parameter_assign
+=  $ 
+
+statement
+float while int if ; return void { identifier  
+
+M_selection_statement
+  $ 
+
+third_expression
+( ! identifier number  
+
+declaration_parameter
+identifier  
+
+and_bool_expression
+( ! number identifier  
+
+sstart
+float int void  $ 
+
+function_expression
+identifier  
+
+assignment_expression_list
+identifier  $ 
+
+assignment_expression_list_suffix
+,  $ 
+
+statement_list
+float while int if ; return void { identifier  $ 
+
+selection_statement
+if  
+
+second_expression
+( ! number identifier  
+
+second_operator
+/ *  
+
+expression
+( ! number identifier  
+
+first_expression
+( ! number identifier  
+
+declaration
+float int void  
+
+declaration_parameter_suffix
+,  $ 
+
+and_operator
+&&  
+
+compound_statement
+{  
+
+start
+float int void  $ 
+
+M_function_definition
+  $ 
+
+N_selection_statement
+  $ 
+
+N_iteration_statement
+  $ 
+
+primary_expression
+( identifier number  
+
+assignment_operator
+^= += /= = %= *= |= &= -=  
+
+bool_operator
+== >= <= > != <  
+
+expression_list
+( ! number identifier  $ 
+
+expression_statement
+; identifier  
+
+constant_expression
+( ! number identifier  
+
+expression_list_suffix
+,  $ 
+
+function_parameter_list_suffix
+, void  $ 
+
+M_declaration_parameter_suffix
+  $ 
+
+external_declaration
+float int void  
+
+function_definition
+float int void  
+
+type_specifier
+float int void  
+
+first_operator
+- +  
+

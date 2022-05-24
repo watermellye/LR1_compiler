@@ -1,0 +1,139 @@
+['start', 'declaration_parameter_assign', 'declaration_parameter_suffix', 'M_declaration_parameter', 'M_declaration_parameter_suffix', 'expression_list', 'expression_list_suffix', 'M_function_definition', 'function_parameter_list', 'function_parameter_list_suffix', 'statement_list', 'assignment_expression_list', 'assignment_expression_list_suffix', 'M_selection_statement', 'N_selection_statement', 'N_iteration_statement', 'sstart']
+M_declaration_parameter
+  $ 
+
+start
+void float int  $ 
+
+compound_statement
+{  
+
+and_operator
+&&  
+
+N_iteration_statement
+  $ 
+
+expression_list_suffix
+,  $ 
+
+declaration_parameter_assign
+=  $ 
+
+expression_statement
+identifier ;  
+
+function_expression
+identifier  
+
+external_declaration
+void float int  
+
+type_specifier
+void float int  
+
+declaration_parameter
+identifier  
+
+function_parameter_list_suffix
+void ,  $ 
+
+sstart
+void float int  $ 
+
+bool_operator
+== > <= < >= !=  
+
+function_parameter_list
+void float int  $ 
+
+selection_statement
+if  
+
+M_selection_statement
+  $ 
+
+statement
+float void return { if ; identifier while int  
+
+second_expression
+identifier number ! (  
+
+M_function_definition
+  $ 
+
+function_parameter
+void float int  
+
+assignment_expression_list
+identifier  $ 
+
+expression
+identifier number ! (  
+
+assignment_expression
+identifier  
+
+declaration
+void float int  
+
+and_bool_expression
+identifier number ! (  
+
+assignment_expression_list_suffix
+,  $ 
+
+second_operator
+* /  
+
+statement_list
+float void return { if ; identifier while int  $ 
+
+assignment_operator
+%= |= ^= /= *= = -= += &=  
+
+primary_expression
+identifier number (  
+
+function_definition
+void float int  
+
+declaration_parameter_suffix
+,  $ 
+
+N_selection_statement
+  $ 
+
+constant_expression
+identifier number ! (  
+
+third_expression
+identifier number ! (  
+
+or_bool_expression
+identifier number ! (  
+
+single_bool_expression
+identifier number ! (  
+
+first_operator
++ -  
+
+expression_list
+identifier number ! (  $ 
+
+or_operator
+||  
+
+first_expression
+identifier number ! (  
+
+jump_statement
+return  
+
+M_declaration_parameter_suffix
+  $ 
+
+iteration_statement
+while  
+

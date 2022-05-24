@@ -1,0 +1,111 @@
+001:sstart:start
+002:start:external_declaration start
+003:start:$
+101:external_declaration:declaration
+102:external_declaration:function_definition
+
+111:declaration:type_specifier declaration_parameter declaration_parameter_suffix ;
+112:declaration_parameter:identifier M_declaration_parameter declaration_parameter_assign
+113:declaration_parameter_assign:= expression
+114:declaration_parameter_assign:$
+115:declaration_parameter_suffix:, M_declaration_parameter_suffix declaration_parameter declaration_parameter_suffix
+116:declaration_parameter_suffix:$
+117:M_declaration_parameter:$
+118:M_declaration_parameter_suffix:$
+
+121:primary_expression:identifier
+122:primary_expression:number
+123:primary_expression:( expression )
+
+131:expression:function_expression
+132:expression:constant_expression
+
+141:function_expression:identifier ( expression_list )
+
+151:expression_list:expression expression_list_suffix
+152:expression_list:$
+153:expression_list_suffix:, expression expression_list_suffix
+154:expression_list_suffix:$
+
+201:assignment_operator:=
+202:assignment_operator:+=
+203:assignment_operator:-=
+204:assignment_operator:*=
+205:assignment_operator:/=
+206:assignment_operator:%=
+207:assignment_operator:^=
+208:assignment_operator:&=
+209:assignment_operator:|=
+
+301:type_specifier:int
+303:type_specifier:float
+304:type_specifier:void
+
+401:constant_expression:or_bool_expression
+402:or_bool_expression:or_bool_expression or_operator and_bool_expression
+403:or_bool_expression:and_bool_expression
+404:and_bool_expression:and_bool_expression and_operator single_bool_expression
+405:and_bool_expression:single_bool_expression
+406:single_bool_expression:single_bool_expression bool_operator first_expression
+407:single_bool_expression:first_expression
+
+411:first_expression:first_expression first_operator second_expression
+412:first_expression:second_expression
+413:second_expression:second_expression second_operator primary_expression
+414:second_expression:third_expression
+415:third_expression:! primary_expression
+416:third_expression:primary_expression
+
+501:or_operator:||
+502:and_operator:&&
+503:bool_operator:<
+504:bool_operator:>
+505:bool_operator:!=
+506:bool_operator:==
+507:bool_operator:<=
+508:bool_operator:>=
+
+511:first_operator:+
+512:first_operator:-
+513:second_operator:*
+514:second_operator:/
+
+601:function_definition:type_specifier identifier M_function_definition ( function_parameter_list ) compound_statement
+602:M_function_definition:$
+
+611:function_parameter_list:function_parameter function_parameter_list_suffix
+612:function_parameter_list:$
+613:function_parameter_list:void
+614:function_parameter_list_suffix:, function_parameter function_parameter_list_suffix
+615:function_parameter_list_suffix:$
+616:function_parameter_list_suffix:void
+617:function_parameter:type_specifier identifier
+
+701:compound_statement:{ statement_list }
+
+711:statement_list:statement_list statement 
+712:statement_list:$
+713:statement:expression_statement
+714:statement:jump_statement
+715:statement:selection_statement
+716:statement:iteration_statement
+717:statement:compound_statement
+718:statement:declaration
+
+721:expression_statement:assignment_expression_list ;
+722:assignment_expression_list:assignment_expression assignment_expression_list_suffix
+723:assignment_expression_list:$
+724:assignment_expression:identifier assignment_operator expression
+725:assignment_expression_list_suffix:, assignment_expression assignment_expression_list_suffix
+726:assignment_expression_list_suffix:$
+
+731:jump_statement:return expression ;
+732:jump_statement:return ;
+
+741:selection_statement:if ( constant_expression ) M_selection_statement statement else N_selection_statement statement
+742:selection_statement:if ( constant_expression ) M_selection_statement statement
+743:iteration_statement:while N_iteration_statement ( constant_expression ) M_selection_statement statement
+751:M_selection_statement:$
+752:N_selection_statement:$
+753:N_iteration_statement:$
+
