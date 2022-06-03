@@ -9,6 +9,8 @@
 - [x] 过程文件：项目、first集、每个项目的闭包集合、项目集族、Go表
 - [x] 输出：Action-Goto表、分析栈、语法树（使用pyecharts生成）
 - [x] Warning(print) 和 Error(raise Exception) 提示
+- [x] 函数调用
+- [ ] 数组和字符串支持
 - [ ] 逻辑运算（&&  ||）中的截断
 
 ## 目标代码生成器
